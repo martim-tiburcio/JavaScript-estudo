@@ -3,11 +3,12 @@
 body{
     background-color: rgb(127, 109, 209);
     font: normal 16px Arial;
-    text-align: center;
+    
 }
 
 header{
     color: white;
+    text-align: center;
 }
 
 section{
@@ -15,8 +16,21 @@ section{
     border-radius: 10px;
     padding: 20px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.233);
+    max-width: 400px;
+    margin: auto;
+}
+
+div#res{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.texto-imagem{
+    padding-bottom: 50px;
 }
 
 footer{
     color: white;
+    text-align: center;
 }
