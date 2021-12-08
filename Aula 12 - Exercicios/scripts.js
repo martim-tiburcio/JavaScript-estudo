@@ -6,7 +6,7 @@ function carregar() {
     var minuto = date.getMinutes()
     msg.innerHTML = `Agora são ${hora}:${minuto}hrs`
     
-    //var hora = 19
+    //var hora = 7
     //msg.innerHTML = `Agora são ${hora}hrs`
     
     if (hora >= 0 && hora < 12) {
