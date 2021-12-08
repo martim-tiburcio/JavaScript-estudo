@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a usar o DOM</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula 9</h1>
+    <p>Estamos Aprendendo <strong>JavaScript</strong>.</p>
+    <h2>JavaScript, descomplicado.</h2>
+    <div class="msg">
+        <p>Não perca mais tempo, venha estudar também!</p>
+    </div>
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(`Está escrito assim: ${p1.innerText}`)
+        p1.style.color='blue'
+        corpo.style.backgroundColor='yellow'        
+    </script>
+    <br>
+    <script>
+        document.write(p1.innerHTML)
+    </script>
+    <br>
+    <script>
+        var p2 = window.document.querySelector('div.msg')
+        window.document.write(p2.innerHTML)
+    </script>
+</body>
+</html>

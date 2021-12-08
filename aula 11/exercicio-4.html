@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita Federal</title>
+</head>
+<body>
+    <h1>Triagem de passageiros</h1>
+    <p>Informe sua nacionalidade:</p> 
+    <input type="text" name="texto1" id="texto1">
+    <input type="button" value="Verificar" onclick="nacionalidade()">
+    <div id="ok">
+
+    </div>
+
+    <script>
+        function nacionalidade(){
+            var texto1 = document.querySelector('input#texto1')
+            var ok = document.querySelector('div#ok')
+            var país = (texto1.value)
+            if (país == 'brasil'){
+                ok.innerHTML = `<p>Olá, seja bem vindo: Você é do ${país}.</p>`
+            } else {
+                ok.innerHTML = `<p>Seja bem vindo, estrangeiro você veio de ${país}</p>`
+            }        
+        }
+    </script>
+</body>
+</html>
